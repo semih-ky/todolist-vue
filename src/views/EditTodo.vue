@@ -40,7 +40,7 @@ export default {
   computed: {
     ...mapGetters(['getTodo']),
     getTodoId() {
-      return parseInt(this.$route.params.id);
+      return this.$route.params.id;
     },
   },
   methods: {
